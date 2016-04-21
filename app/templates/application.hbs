@@ -1,3 +1,9 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="meta-form standard-meta">
+    {{input value=standardTags.siteTitle placeholder="Site Title"}}
+    {{input value=standardTags.keywords placeholder="Keywords"}}
+</div>
 
-{{outlet}}
+<div class="meta-tags-output">
+    <p>{{standardTags.siteTitle}}</p>
+    <p>{{standardTags.keywords}}</p>
+</div>
