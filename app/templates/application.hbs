@@ -1,9 +1,34 @@
-<div class="meta-form standard-meta">
-    {{input value=standardTags.siteTitle placeholder="Site Title"}}
-    {{input value=standardTags.keywords placeholder="Keywords"}}
+<div class="meta-forms">
+    <div class="meta-form standard-meta">
+        <h2>Standard Meta Tags</h2>
+        {{input value=standardTags.siteTitle placeholder="Site Title"}}
+        {{input value=standardTags.keywords placeholder="Keywords"}}
+        {{input value=standardTags.description placeholder="Description"}}
+    </div>
+    <div class="meta-form standard-meta">
+        <h2>Facebook Tags</h2>
+        {{input value=facebookTags.title placeholder="Site Title"}}
+        {{input value=facebookTags.siteName placeholder="Site Name"}}
+        {{input value=facebookTags.url placeholder="URL"}}
+        {{input value=facebookTags.image placeholder="Image"}}
+        {{input value=facebookTags.locale placeholder="Locale"}}
+        {{input value=facebookTags.appId placeholder="appId"}}
+        {{input value=facebookTags.description placeholder="description"}}
+    </div>
 </div>
 
 <div class="meta-tags-output">
+    <h2>Standard Meta Tags</h2>
     <p>{{standardTags.siteTitle}}</p>
     <p>{{standardTags.keywords}}</p>
+    <p>{{standardTags.description}}</p>
+
+    <h2>Facebook Tags</h2>
+    <p>{{facebookTags.title}}</p>
+    <p>{{facebookTags.siteName}}</p>
+    <p>{{facebookTags.url}}</p>
+    <p>{{facebookTags.image}}</p>
+    <p>{{facebookTags.locale}}</p>
+    <p>{{facebookTags.appId}}</p>
+    <p>{{facebookTags.description}}</p>
 </div>
