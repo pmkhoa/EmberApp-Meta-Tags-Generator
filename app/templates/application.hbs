@@ -1,37 +1,4 @@
-<div class="meta-forms">
-    <div class="meta-form standard-metas">
-        <h2>Standard Meta Tags</h2>
-        {{input value=standardTags.siteTitle placeholder="Site Title"}}
-        {{input value=standardTags.keywords placeholder="Keywords"}}
-        {{input value=standardTags.description placeholder="Description"}}
-    </div>
-    <div class="meta-form facebook-metas">
-        <h2>Facebook Tags</h2>
-        {{input value=facebookTags.title placeholder="Site Title"}}
-        {{input value=facebookTags.siteName placeholder="Site Name"}}
-        {{input value=facebookTags.url placeholder="URL"}}
-        {{input value=facebookTags.image placeholder="Image"}}
-        {{input value=facebookTags.locale placeholder="Locale"}}
-        {{input value=facebookTags.appId placeholder="appId"}}
-        {{input value=facebookTags.description placeholder="description"}}
-    </div>
-    <div class="meta-form twitter-metas">
-        <h2>Twitter Meta Tags</h2>
-        {{input value=twitterTags.title placeholder="Site Title"}}
-        {{input value=twitterTags.siteName placeholder="Site Name"}}
-        {{input value=twitterTags.url placeholder="URL"}}
-        {{input value=twitterTags.image placeholder="Image"}}
-        {{input value=twitterTags.locale placeholder="Locale"}}
-        {{input value=twitterTags.appId placeholder="appId"}}
-        {{input value=twitterTags.description placeholder="description"}}
-    </div>
-    <div class="meta-form googleplus-metas">
-        <h2>Google Plus Meta Tags</h2>
-        {{input value=googleTags.profileLink placeholder="Profile Link"}}
-        {{input value=googleTags.publisherLink placeholder="Business Link"}}
-    </div>
-</div>
-
+{{meta-forms standardTags=standardTags facebookTags=facebookTags twitterTags=twitterTags googleTags=googleTags}}
 <div class="meta-tags-output">
     <h2>Standard Meta Tags</h2>
     <p>{{standardTags.siteTitle}}</p>
