@@ -1,9 +1,9 @@
 <div class="vertical-tabs-container">
     <div class="vertical-tabs">
         <a href="javascript:void(0)" class="js-vertical-tab vertical-tab is-active" rel="tab1">Standard Tags</a>
-        <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab2">Facebook Tags</a>
-        <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab3">Twitter Tags</a>
-        <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab4">Google Plus Tags</a>
+        <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab2">Google Plus Tags</a>
+        <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab3">Facebook Tags</a>
+        <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab4">Twitter Tags</a>
     </div>
 
     <div class="vertical-tab-content-container">
@@ -15,36 +15,33 @@
             {{input value=standardTags.description placeholder="Description"}}
         </div>
 
-        <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab2">Facebook Tags</a>
+        <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab2">Google Plus Tags</a>
         <div id="tab2" class="js-vertical-tab-content vertical-tab-content">
-            <h2>Facebook Tags</h2>
-            {{input value=facebookTags.title placeholder="Site Title"}}
-            {{input value=facebookTags.siteName placeholder="Site Name"}}
-            {{input value=facebookTags.url placeholder="URL"}}
-            {{input value=facebookTags.image placeholder="Image"}}
-            {{input value=facebookTags.locale placeholder="Locale"}}
-            {{input value=facebookTags.appId placeholder="appId"}}
-            {{input value=facebookTags.description placeholder="description"}}
-        </div>
-
-        <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab3">Twitter Tags</a>
-        <div id="tab3" class="js-vertical-tab-content vertical-tab-content">
-            <h2>Twitter Meta Tags</h2>
-            {{input value=twitterTags.title placeholder="Site Title"}}
-            {{input value=twitterTags.siteName placeholder="Site Name"}}
-            {{input value=twitterTags.url placeholder="URL"}}
-            {{input value=twitterTags.image placeholder="Image"}}
-            {{input value=twitterTags.locale placeholder="Locale"}}
-            {{input value=twitterTags.appId placeholder="appId"}}
-            {{input value=twitterTags.description placeholder="description"}}
-        </div>
-
-        <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab4">Google Plus Tags</a>
-        <div id="tab4" class="js-vertical-tab-content vertical-tab-content">
             <h2>Google Plus Meta Tags</h2>
             {{input value=googleTags.siteName placeholder="Website Name / Title"}}
             {{input value=googleTags.description placeholder="Description"}}
             {{input value=googleTags.image placeholder="Site image"}}
         </div>
+
+        <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab3">Facebook Tags</a>
+        <div id="tab3" class="js-vertical-tab-content vertical-tab-content">
+            <h2>Facebook Tags</h2>
+            {{input value=facebookTags.url placeholder="URL"}}
+            {{input value=facebookTags.title placeholder="Site Title"}}
+            {{input value=facebookTags.siteName placeholder="Site Name"}}
+            {{input value=facebookTags.description placeholder="description"}}
+            {{input value=facebookTags.image placeholder="Image"}}
+        </div>
+
+        <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab4">Twitter Tags</a>
+        <div id="tab4" class="js-vertical-tab-content vertical-tab-content">
+            <h2>Twitter Meta Tags</h2>
+            {{input value=twitterTags.title placeholder="Site Title"}}
+            {{input value=twitterTags.description placeholder="description"}}
+            {{input value=twitterTags.author placeholder="Creator"}}
+            {{input value=twitterTags.url placeholder="URL"}}
+            {{input value=twitterTags.image placeholder="Image"}}
+        </div>
+
     </div>
 </div>

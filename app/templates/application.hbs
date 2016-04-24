@@ -1,8 +1,17 @@
-<div class="meta-forms">
-    {{meta-forms standardTags=standardTags facebookTags=facebookTags twitterTags=twitterTags googleTags=googleTags}}
+<div class="hero-intro">
+    <div class="copy">
+        <h1>Meta Tags Generator</h1>
+        <h3>An Easy Tool to Generate All Meta Tags for Better SEO</h3>
+    </div>
 </div>
-<div class="meta-tags-output">
-    <pre>
+
+
+<div class="meta-forms-wrapper">
+    <div class="meta-forms">
+        {{meta-forms standardTags=standardTags facebookTags=facebookTags twitterTags=twitterTags googleTags=googleTags}}
+    </div>
+    <div class="meta-tags-output">
+        <pre>
         &lt;!-- Standard web meta tags --&gt;
         &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" &gt;
         &lt;meta name="viewport" content="initial-scale=1, width=device-width, height=device-height"&gt;
@@ -21,10 +30,9 @@
         &lt;!-- Meta tags for Facebook --&gt;
         &lt;meta property="og:url" content="{{facebookTags.url}}" &gt;
         &lt;meta property="og:title" content="{{facebookTags.title}}" &gt;
-        &lt;meta property="og:image" content="{{facebookTags.image}}" &gt;
         &lt;meta property="og:site_name" content="{{facebookTags.siteName}}"&gt;
         &lt;meta property="og:description" content="{{facebookTags.description}}" &gt;
-        &lt;meta property="og:type" content="website" &gt;
+        &lt;meta property="og:image" content="{{facebookTags.image}}" &gt;
 
         &lt;!-- Meta tags for Twitter --&gt;
         &lt;meta property="twitter:card" content="summary" &gt;
@@ -33,5 +41,10 @@
         &lt;meta property="twitter:creator" content="{{twitterTags.author}}" &gt; 
         &lt;meta property="twitter:url" content="{{twitterTags.url}}" &gt;
         &lt;meta property="twitter:image" content="{{twitterTags.image}}" &gt;
-    </pre>
+        </pre>
+    </div>
 </div>
+
+<footer>
+    <p>Designed &amp; Developed by <a href="http://khoapham.me">Khoa Pham</a></p>
+</footer>
