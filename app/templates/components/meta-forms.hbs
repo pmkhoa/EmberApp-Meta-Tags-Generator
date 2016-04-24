@@ -10,9 +10,13 @@
         <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading is-active" rel="tab1">Standard Tags</a>
         <div id="tab1" class="js-vertical-tab-content vertical-tab-content">
             <h2>Standard Meta Tags</h2>
-            {{input value=standardTags.siteTitle placeholder="Site Title"}}
-            {{input value=standardTags.keywords placeholder="Keywords"}}
-            {{input value=standardTags.description placeholder="Description"}}
+            <label for="standard-tag-title">Website Title (e.g. Meta Tags Generator)</label>
+            {{input value=standardTags.siteTitle id="standard-tag-title" placeholder="Site Title"}}
+            <label for="standard-tag-keywords">Keywords(separated by comma)</label>
+            {{input value=standardTags.keywords id="standard-tag-keywords" placeholder="Keywords"}}
+            <label for="standard-tag-description">Website Description
+            <span class="text-desc">This will be displayed in search results, and social sharing.</span></label>
+            {{input value=standardTags.description id="standard-tag-description" placeholder="Description"}}
         </div>
 
         <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab2">Google Plus Tags</a>
