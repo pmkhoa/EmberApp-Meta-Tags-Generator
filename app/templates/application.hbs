@@ -1,29 +1,37 @@
-{{meta-forms standardTags=standardTags facebookTags=facebookTags twitterTags=twitterTags googleTags=googleTags}}
+<div class="meta-forms">
+    {{meta-forms standardTags=standardTags facebookTags=facebookTags twitterTags=twitterTags googleTags=googleTags}}
+</div>
 <div class="meta-tags-output">
-    <h2>Standard Meta Tags</h2>
-    <p>{{standardTags.siteTitle}}</p>
-    <p>{{standardTags.keywords}}</p>
-    <p>{{standardTags.description}}</p>
+    <pre>
+        &lt;!-- Standard web meta tags --&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" &gt;
+        &lt;meta name="viewport" content="initial-scale=1, width=device-width, height=device-height"&gt;
+        &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"&gt;
 
-    <h2>Facebook Tags</h2>
-    <p>{{facebookTags.title}}</p>
-    <p>{{facebookTags.siteName}}</p>
-    <p>{{facebookTags.url}}</p>
-    <p>{{facebookTags.image}}</p>
-    <p>{{facebookTags.locale}}</p>
-    <p>{{facebookTags.appId}}</p>
-    <p>{{facebookTags.description}}</p>
+        &lt;title&gt;{{standardTags.siteTitle}}&lt;/title&gt;
+        &lt;meta name="keywords" content="{{standardTags.keywords}}" &gt;
+        &lt;meta name="description" content="{{standardTags.description}}"&gt;
 
-    <h2>Twitter Tags</h2>
-    <p>{{twitterTags.title}}</p>
-    <p>{{twitterTags.siteName}}</p>
-    <p>{{twitterTags.url}}</p>
-    <p>{{twitterTags.image}}</p>
-    <p>{{twitterTags.locale}}</p>
-    <p>{{twitterTags.appId}}</p>
-    <p>{{twitterTags.description}}</p>
+        &lt;!-- Meta tags for Google+ --&gt;
+        &lt;meta itemprop="name" content="{{googleTags.siteName}}"&gt;
+        &lt;meta itemprop="description" content="{{googleTags.description}}"&gt;
+        &lt;meta itemprop="image" content="{{googleTags.image}}"&gt;
 
-    <h2>Google Plus Meta Tags</h2>
-    <p>{{googleTags.profileLink}}</p>
-    <p>{{googleTags.publisherLink}}</p>
+        &lt;!-- Meta tags for Facebook --&gt;
+        &lt;meta property="og:url" content="{{facebookTags.url}}" &gt;
+        &lt;meta property="og:title" content="{{facebookTags.title}}" &gt;
+        &lt;meta property="og:image" content="{{facebookTags.image}}" &gt;
+        &lt;meta property="og:site_name" content="{{facebookTags.siteName}}"&gt;
+        &lt;meta property="og:description" content="{{facebookTags.description}}" &gt;
+        &lt;meta property="og:type" content="website" &gt;
+
+        &lt;!-- Meta tags for Twitter --&gt;
+        &lt;meta property="twitter:card" content="summary" &gt;
+        &lt;meta property="twitter:title" content="{{twitterTags.title}}" &gt;
+        &lt;meta property="twitter:description" content="{{twitterTags.description}}" &gt;
+        &lt;meta property="twitter:creator" content="{{twitterTags.author}}" &gt; 
+        &lt;meta property="twitter:url" content="{{twitterTags.url}}" &gt;
+        &lt;meta property="twitter:image" content="{{twitterTags.image}}" &gt;
+    </pre>
 </div>

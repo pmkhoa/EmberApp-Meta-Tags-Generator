@@ -1,12 +1,6 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
+// @import "grid_settings";
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 @import "base/base";
 @import "page";
-.meta-forms {
-    float: left;
-    width: 50%;
-}
-.meta-tags-output {
-    float: left;
-    width: 50%;
-}

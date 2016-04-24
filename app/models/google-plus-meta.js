@@ -2,6 +2,7 @@ import Model from 'ember-data/model';
 import attr from 'ember-data/attr';
 
 export default Model.extend({
-    profileLink: attr(),
-    publisherLink: attr()
+    siteName: attr(),
+    description: attr(),
+    image: attr()
 });
