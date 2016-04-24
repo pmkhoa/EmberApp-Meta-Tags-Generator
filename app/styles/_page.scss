@@ -18,7 +18,7 @@ body {
   $tab-content-background: lighten($tab-border-color, 10%);
   $tab-active-color: $tab-content-background;
   $tab-inactive-color: $base-background-color;
-  $vertical-tabs-height: 500px;
+  $vertical-tabs-height: 658px;
   $vertical-tab-mode: $medium-screen;
 
   @include clearfix;

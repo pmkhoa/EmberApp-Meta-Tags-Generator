@@ -1,34 +1,29 @@
 <div class="vertical-tabs-container">
     <div class="vertical-tabs">
         <a href="javascript:void(0)" class="js-vertical-tab vertical-tab is-active" rel="tab1">Standard Tags</a>
-        <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab2">Google Plus Tags</a>
-        <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab3">Facebook Tags</a>
-        <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab4">Twitter Tags</a>
+        <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab2">Facebook Tags</a>
+        <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab3">Twitter Tags</a>
     </div>
 
     <div class="vertical-tab-content-container">
         <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading is-active" rel="tab1">Standard Tags</a>
         <div id="tab1" class="js-vertical-tab-content vertical-tab-content">
             <h2>Standard Meta Tags</h2>
-            <label for="standard-tag-title">Website Title (e.g. Meta Tags Generator)</label>
-            {{input value=standardTags.siteTitle id="standard-tag-title" placeholder="Site Title"}}
+            <label for="standard-tag-title">Website Name / Title (e.g. Meta Tags Generator)</label>
+            {{input type="text" value=standardTags.siteTitle id="standard-tag-title" placeholder="Site Title"}}
+            <label for="standard-tag-canonical">Canonical URL</label>
+            {{input type="text"  value=standardTags.canonicalUrl id="standard-tag-canonical" placeholder="Website home page URL"}}
             <label for="standard-tag-keywords">Keywords(separated by comma)</label>
-            {{input value=standardTags.keywords id="standard-tag-keywords" placeholder="Keywords"}}
+            {{input type="text"  value=standardTags.keywords id="standard-tag-keywords" placeholder="Keywords"}}
             <label for="standard-tag-description">Website Description
             <span class="text-desc">This will be displayed in search results, and social sharing.</span></label>
-            {{input value=standardTags.description id="standard-tag-description" placeholder="Description"}}
+            {{textarea value=standardTags.description id="standard-tag-description" placeholder="Description" rows="6"}}
+            <label for="standard-tag-image">Website Logo Image</label>
+            {{input value=standardTags.image placeholder="Image URL"}}
         </div>
 
-        <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab2">Google Plus Tags</a>
+        <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab2">Facebook Tags</a>
         <div id="tab2" class="js-vertical-tab-content vertical-tab-content">
-            <h2>Google Plus Meta Tags</h2>
-            {{input value=googleTags.siteName placeholder="Website Name / Title"}}
-            {{input value=googleTags.description placeholder="Description"}}
-            {{input value=googleTags.image placeholder="Site image"}}
-        </div>
-
-        <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab3">Facebook Tags</a>
-        <div id="tab3" class="js-vertical-tab-content vertical-tab-content">
             <h2>Facebook Tags</h2>
             {{input value=facebookTags.url placeholder="URL"}}
             {{input value=facebookTags.title placeholder="Site Title"}}
@@ -37,8 +32,8 @@
             {{input value=facebookTags.image placeholder="Image"}}
         </div>
 
-        <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab4">Twitter Tags</a>
-        <div id="tab4" class="js-vertical-tab-content vertical-tab-content">
+        <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab3">Twitter Tags</a>
+        <div id="tab3" class="js-vertical-tab-content vertical-tab-content">
             <h2>Twitter Meta Tags</h2>
             {{input value=twitterTags.title placeholder="Site Title"}}
             {{input value=twitterTags.description placeholder="description"}}
