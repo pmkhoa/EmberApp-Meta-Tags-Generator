@@ -1,7 +1,7 @@
 <div class="hero-intro">
     <div class="copy">
         <h1>Meta Tags Generator</h1>
-        <h3>An Easy Tool to Generate All Meta Tags for Better SEO</h3>
+        <h3 class="light-text">An Easy Tool to Generate Meta Tags for Better SEO</h3>
     </div>
 </div>
 
@@ -21,7 +21,7 @@
         &lt;title&gt;{{standardTags.siteTitle}}&lt;/title&gt;
         &lt;meta name="keywords" content="{{standardTags.keywords}}"&gt;
         &lt;meta name="description" content="{{standardTags.description}}"&gt;
-        &lt;link rel="canonical" href="{{standardTags.canonicalUrl}}"&gt;
+        &lt;link rel="canonical" href="{{standardTags.url}}"&gt;
 
         &lt;!-- Meta tags for Google+ --&gt;
         &lt;meta itemprop="name" content="{{standardTags.siteTitle}}"&gt;
@@ -29,18 +29,18 @@
         &lt;meta itemprop="image" content="{{standardTags.image}}"&gt;
 
         &lt;!-- Meta tags for Facebook --&gt;
-        &lt;meta property="og:url" content="{{facebookTags.url}}"&gt;
+        &lt;meta property="og:url" content="{{standardTags.url}}"&gt;
         &lt;meta property="og:title" content="{{facebookTags.title}}" &gt;
         &lt;meta property="og:site_name" content="{{facebookTags.siteName}}"&gt;
-        &lt;meta property="og:description" content="{{facebookTags.description}}"&gt;
+        &lt;meta property="og:description" content="{{standardTags.description}}"&gt;
         &lt;meta property="og:image" content="{{facebookTags.image}}"&gt;
 
         &lt;!-- Meta tags for Twitter --&gt;
         &lt;meta property="twitter:card" content="summary"&gt;
         &lt;meta property="twitter:title" content="{{twitterTags.title}}"&gt;
-        &lt;meta property="twitter:description" content="{{twitterTags.description}}"&gt;
+        &lt;meta property="twitter:description" content="{{standardTags.description}}"&gt;
         &lt;meta property="twitter:creator" content="{{twitterTags.author}}"&gt; 
-        &lt;meta property="twitter:url" content="{{twitterTags.url}}"&gt;
+        &lt;meta property="twitter:url" content="{{standardTags.url}}"&gt;
         &lt;meta property="twitter:image" content="{{twitterTags.image}}"&gt;
         </pre>
     </div>

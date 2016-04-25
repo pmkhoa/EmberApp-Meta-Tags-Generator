@@ -8,14 +8,13 @@ body {
   $base-background-color: white !default;
   $base-line-height: 1.5em !default;
   $base-spacing: 1.5em !default;
-  $action-color: #477dca !default;
   $dark-gray: #333 !default;
   $medium-screen: 40em !default;
   $base-font-color: $dark-gray !default;
   $tab-border-color: $base-border-color;
   $tab-border: 1px solid $tab-border-color;
   $tab-border-radius: $base-border-radius;
-  $tab-content-background: lighten($tab-border-color, 10%);
+  $tab-content-background: #F9F9F9;
   $tab-active-color: $tab-content-background;
   $tab-inactive-color: $base-background-color;
   $vertical-tabs-height: 658px;
@@ -200,10 +199,18 @@ pre, code {
     display: block;
 }
 
+.light-text {
+    font-weight: 400;
+}
+
 footer {
-    background-color: #f9f9f9;
-    color: #3c3c3c;
+    background: #B0976D;
+    color: white;
     padding: 20px 40px;
+    a {
+        color: white;
+        text-decoration: underline;
+    }
     p {
         margin: 0;
     }

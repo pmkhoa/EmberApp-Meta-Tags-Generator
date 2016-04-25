@@ -8,38 +8,37 @@
     <div class="vertical-tab-content-container">
         <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading is-active" rel="tab1">Standard Tags</a>
         <div id="tab1" class="js-vertical-tab-content vertical-tab-content">
-            <h2>Standard Meta Tags</h2>
-            <label for="standard-tag-title">Website Name / Title (e.g. Meta Tags Generator)</label>
-            {{input type="text" value=standardTags.siteTitle id="standard-tag-title" placeholder="Site Title"}}
+            <label for="standard-tag-title">Website Name/Title(e.g. Google - Home)</label>
+            {{input type="text" value=standardTags.siteTitle id="standard-tag-title" placeholder="Website Title"}}
             <label for="standard-tag-canonical">Canonical URL</label>
-            {{input type="text"  value=standardTags.canonicalUrl id="standard-tag-canonical" placeholder="Website home page URL"}}
+            {{input type="text"  value=standardTags.url id="standard-tag-canonical" placeholder="Website home page URL"}}
             <label for="standard-tag-keywords">Keywords(separated by comma)</label>
-            {{input type="text"  value=standardTags.keywords id="standard-tag-keywords" placeholder="Keywords"}}
+            {{input type="text"  value=standardTags.keywords id="standard-tag-keywords" placeholder="List of Keyword"}}
             <label for="standard-tag-description">Website Description
             <span class="text-desc">This will be displayed in search results, and social sharing.</span></label>
             {{textarea value=standardTags.description id="standard-tag-description" placeholder="Description" rows="6"}}
-            <label for="standard-tag-image">Website Logo Image</label>
+            <label for="standard-tag-image">Website Image</label>
             {{input value=standardTags.image placeholder="Image URL"}}
         </div>
 
         <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab2">Facebook Tags</a>
         <div id="tab2" class="js-vertical-tab-content vertical-tab-content">
-            <h2>Facebook Tags</h2>
-            {{input value=facebookTags.url placeholder="URL"}}
-            {{input value=facebookTags.title placeholder="Site Title"}}
-            {{input value=facebookTags.siteName placeholder="Site Name"}}
-            {{input value=facebookTags.description placeholder="description"}}
-            {{input value=facebookTags.image placeholder="Image"}}
+            <label for="facebook-tag-title">Website Title (e.g. Home Page)</label>
+            {{input id="facebook-tag-title" value=facebookTags.title placeholder="Site Title"}}
+            <label for="facebook-tag-site-name">Website Name (e.g. Meta Tags Generator)</label>
+            {{input id="facebook-tag-site-name" value=facebookTags.siteName placeholder="Website Name"}}
+            <label for="facebook-tag-image">Website Image (1200x630)</label>
+            {{input value=facebookTags.image placeholder="Image URL"}}
         </div>
 
         <a href="" class="js-vertical-tab-accordion-heading vertical-tab-accordion-heading" rel="tab3">Twitter Tags</a>
         <div id="tab3" class="js-vertical-tab-content vertical-tab-content">
-            <h2>Twitter Meta Tags</h2>
-            {{input value=twitterTags.title placeholder="Site Title"}}
-            {{input value=twitterTags.description placeholder="description"}}
-            {{input value=twitterTags.author placeholder="Creator"}}
-            {{input value=twitterTags.url placeholder="URL"}}
-            {{input value=twitterTags.image placeholder="Image"}}
+            <label for="twitter-tag-title">Website Title (e.g. Home Page)</label>
+            {{input id="twitter-tag-title" value=twitterTags.title placeholder="Site Title"}}
+            <label for="twitter-tag-author">Twitter Author</label>
+            {{input id="twitter-tag-author" value=twitterTags.author placeholder="@author"}}
+            <label for="twitter-tag-image">Website Image (120x120)</label>
+            {{input id="twitter-tag-image" value=twitterTags.image placeholder="Image URL"}}
         </div>
 
     </div>

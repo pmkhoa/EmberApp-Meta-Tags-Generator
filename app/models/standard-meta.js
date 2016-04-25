@@ -4,7 +4,7 @@ import attr from 'ember-data/attr';
 export default Model.extend({
     siteTitle: attr(),
     keywords: attr(),
-    canonicalUrl: attr(),
+    url: attr(),
     description: attr(),
     image: attr()
 });
