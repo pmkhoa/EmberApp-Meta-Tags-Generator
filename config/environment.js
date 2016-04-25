@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'meta-generator',
     environment: environment,
-    baseURL: '/',
+    baseURL: '/meta-tags-generator/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
